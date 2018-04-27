@@ -1,6 +1,9 @@
-
 .text-down{
-	color: #1de9c3;
+	color: #a0151f;
+	margin-top: 50px;
+}
+.sec-text-down{
+	color: #333333;
 	margin-top: 50px;
 }
 .icon-down{
@@ -3493,7 +3496,8 @@ em {
 	font-style: italic
 }
 strong {
-	font-weight: 500
+	font-weight: 500;
+	color:#fff;
 }
 small {
 	font-size: 75%
@@ -4334,6 +4338,9 @@ button.btn-floating {
 }
 .waves-effect.waves-light .waves-ripple {
 	background-color: rgba(255,255,255,0.45)
+}
+.waves-effect.waves-light-sec .waves-ripple {
+	background-color: rgba(255,255,0,0.45)
 }
 .waves-effect.waves-red .waves-ripple {
 	background-color: rgba(244,67,54,0.7)
@@ -7440,6 +7447,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .icon-caret-down:before {
 	content: "\e0a2"
 }
+.icon-caret-right:before {
+	content: "\e0a3"
+}
 .icon-caret-left:before {
 	content: "\e0a3"
 }
@@ -8648,7 +8658,7 @@ button:focus {
 	background: none
 }
 i {
-	color: #1de9c3
+	color: #333333
 }
 .primary-color {
 	background-color: #1de9c3 !important
@@ -8858,7 +8868,20 @@ nav.navbar ul a:hover {
 	background-color: transparent
 }
 .header {
-	color: #632b1f
+	color: #e24627
+}
+.container-title{
+	display:inline-block;
+  vertical-align:middle;
+}
+.header-title-first {
+	color: #e24627
+}
+.header-title-sec {
+	color: #008fa5
+}
+.header-title-third {
+	color: #0070ad
 }
 .header .header-wrapper {
 	top: 0;
@@ -8870,13 +8893,20 @@ nav.navbar ul a:hover {
 	margin: 1rem 0;
 	font-weight: 600;
 	font-size: 4rem;
-	text-transform: uppercase
 }
 .header .header-wrapper .tagline {
 	display: block;
 	color: #fff;
 	font-size: 1.5rem;
 	font-weight: 200
+}
+.header .header-wrapper .taglinesec {
+	display: block;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 200;
+	text-align: justify;
+	color:#333333
 }
 .header .header-wrapper .read-more {
 	height: 64px;
@@ -8886,7 +8916,7 @@ nav.navbar ul a:hover {
 .header .header-wrapper .read-more:active {
 	-webkit-transform: translateY(1px);
 	transform: translateY(1px);
-	color: #63f0d6
+	color: #333333
 }
 .header .header-wrapper .read-more i {
 	font-size: 24px
@@ -9012,6 +9042,16 @@ nav.navbar ul a:hover {
 	color: #eee;
 	transition: color .2s, background-color .2s
 }
+.btn, .btn-large-sec, .btn-large-sec, .btn-floating  {
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	box-shadow: none;
+	border: 2px solid #333333;
+	box-sizing: content-box;
+	color: #333333;
+	transition: color .2s, background-color .2s
+}
 .btn::before, .btn-large::before, .btn-large::before, .btn-floating::before {
 	content: '';
 	position: absolute;
@@ -9132,7 +9172,7 @@ input[type=text]+label, input[type=password]+label, input[type=email]+label, inp
 	margin: 5px 0
 }
 .light .header-wrapper .tagline, .page-footer .footer-copyright .header-wrapper .tagline, .white .header-wrapper .tagline {
-	color: #777
+	color: #333333
 }
 .horizontal-half-wrapper .header-background.white+.header-wrapper .tagline {
 	color: #777
